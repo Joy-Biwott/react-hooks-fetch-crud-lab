@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 function QuestionForm({ onSubmitQuestion }) {
   const [formData, setFormData] = useState({
     prompt: "",
@@ -35,7 +36,7 @@ function QuestionForm({ onSubmitQuestion }) {
       .then(data=>onSubmitQuestion(data))
     // console.log(formData);
   }
-
+  
   return (
     <section>
       <h1>New Question</h1>
